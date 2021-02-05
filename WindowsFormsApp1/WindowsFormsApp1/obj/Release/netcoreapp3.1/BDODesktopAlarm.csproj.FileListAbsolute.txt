@@ -16,3 +16,4 @@
 \\Desktop-n921np9\d\BDODESKTOPALARM-KOR-\WindowsFormsApp1\WindowsFormsApp1\obj\Release\netcoreapp3.1\BDODesktopAlarm.dll
 \\Desktop-n921np9\d\BDODESKTOPALARM-KOR-\WindowsFormsApp1\WindowsFormsApp1\obj\Release\netcoreapp3.1\BDODesktopAlarm.pdb
 \\Desktop-n921np9\d\BDODESKTOPALARM-KOR-\WindowsFormsApp1\WindowsFormsApp1\obj\Release\netcoreapp3.1\BDODesktopAlarm.genruntimeconfig.cache
+\\Desktop-n921np9\d\BDODESKTOPALARM-KOR-\WindowsFormsApp1\WindowsFormsApp1\obj\Release\netcoreapp3.1\BDODesktopAlarm.csprojAssemblyReference.cache
