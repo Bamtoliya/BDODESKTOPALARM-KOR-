@@ -1,0 +1,6 @@
+C:\Users\Bamtoliya\Desktop\DesktopAlarm.exe
+C:\Users\Bamtoliya\Desktop\DesktopAlarm.dll
+C:\Users\Bamtoliya\Desktop\DesktopAlarm.deps.json
+C:\Users\Bamtoliya\Desktop\DesktopAlarm.runtimeconfig.json
+C:\Users\Bamtoliya\Desktop\DesktopAlarm.pdb
+C:\Users\Bamtoliya\Desktop\en-001\DesktopAlarm.resources.dll
