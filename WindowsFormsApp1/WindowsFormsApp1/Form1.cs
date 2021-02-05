@@ -40,7 +40,11 @@ namespace WindowsFormsApp1
         {
 
             DateTime KSTime = DateTime.UtcNow.AddHours(9);
-            DateTime LocalTime = DateTime.UtcNow.AddHours(-5);
+            DateTime UTC = DateTime.UtcNow;
+            DateTime LocalTime2 = DateTime.Now;
+            TimeSpan localTimeZone = TimeZoneInfo.Local.BaseUtcOffset;
+            DateTime LocalTime = DateTime.UtcNow.AddHours(localTimeZone.Hours);
+                       
             KST.Text = KSTime.ToString("HH:mm");
             KSTss.Text = KSTime.ToString("ss");
             KSTWDay.Text = KSTime.ToString("ddd", CultureInfo.CreateSpecificCulture("en-US"));
