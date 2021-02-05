@@ -44,15 +44,23 @@ namespace WindowsFormsApp1
             this.LocalWDay = new System.Windows.Forms.Label();
             this.KSTWDay = new System.Windows.Forms.Label();
             this.Alarm = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.TrayIconMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // KST
             // 
             this.KST.AutoSize = true;
+            this.KST.BackColor = System.Drawing.Color.Transparent;
             this.KST.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.KST.ForeColor = System.Drawing.Color.White;
-            this.KST.Location = new System.Drawing.Point(530, 30);
+            this.KST.Location = new System.Drawing.Point(531, 228);
             this.KST.Name = "KST";
             this.KST.Size = new System.Drawing.Size(173, 67);
             this.KST.TabIndex = 0;
@@ -62,9 +70,10 @@ namespace WindowsFormsApp1
             // Local
             // 
             this.Local.AutoSize = true;
+            this.Local.BackColor = System.Drawing.Color.Transparent;
             this.Local.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Local.ForeColor = System.Drawing.Color.White;
-            this.Local.Location = new System.Drawing.Point(530, 96);
+            this.Local.Location = new System.Drawing.Point(531, 293);
             this.Local.Name = "Local";
             this.Local.Size = new System.Drawing.Size(173, 67);
             this.Local.TabIndex = 0;
@@ -80,9 +89,10 @@ namespace WindowsFormsApp1
             // KSTss
             // 
             this.KSTss.AutoSize = true;
+            this.KSTss.BackColor = System.Drawing.Color.Transparent;
             this.KSTss.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.KSTss.ForeColor = System.Drawing.Color.White;
-            this.KSTss.Location = new System.Drawing.Point(704, 30);
+            this.KSTss.Location = new System.Drawing.Point(704, 228);
             this.KSTss.Name = "KSTss";
             this.KSTss.Size = new System.Drawing.Size(95, 67);
             this.KSTss.TabIndex = 0;
@@ -92,9 +102,10 @@ namespace WindowsFormsApp1
             // Localss
             // 
             this.Localss.AutoSize = true;
+            this.Localss.BackColor = System.Drawing.Color.Transparent;
             this.Localss.Font = new System.Drawing.Font("DS-Digital", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Localss.ForeColor = System.Drawing.Color.White;
-            this.Localss.Location = new System.Drawing.Point(704, 96);
+            this.Localss.Location = new System.Drawing.Point(704, 293);
             this.Localss.Name = "Localss";
             this.Localss.Size = new System.Drawing.Size(96, 66);
             this.Localss.TabIndex = 0;
@@ -144,9 +155,10 @@ namespace WindowsFormsApp1
             // LocalWDay
             // 
             this.LocalWDay.AutoSize = true;
+            this.LocalWDay.BackColor = System.Drawing.Color.Transparent;
             this.LocalWDay.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LocalWDay.ForeColor = System.Drawing.Color.White;
-            this.LocalWDay.Location = new System.Drawing.Point(399, 97);
+            this.LocalWDay.Location = new System.Drawing.Point(409, 293);
             this.LocalWDay.Name = "LocalWDay";
             this.LocalWDay.Size = new System.Drawing.Size(128, 67);
             this.LocalWDay.TabIndex = 2;
@@ -155,10 +167,11 @@ namespace WindowsFormsApp1
             // KSTWDay
             // 
             this.KSTWDay.AutoSize = true;
+            this.KSTWDay.BackColor = System.Drawing.Color.Transparent;
             this.KSTWDay.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.KSTWDay.ForeColor = System.Drawing.Color.White;
             this.KSTWDay.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.KSTWDay.Location = new System.Drawing.Point(399, 30);
+            this.KSTWDay.Location = new System.Drawing.Point(409, 228);
             this.KSTWDay.Name = "KSTWDay";
             this.KSTWDay.Size = new System.Drawing.Size(128, 67);
             this.KSTWDay.TabIndex = 3;
@@ -166,23 +179,87 @@ namespace WindowsFormsApp1
             // 
             // Alarm
             // 
-            this.Alarm.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Alarm.BackColor = System.Drawing.Color.Transparent;
             this.Alarm.Font = new System.Drawing.Font("맑은 고딕", 69.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Alarm.Location = new System.Drawing.Point(100, 0);
+            this.Alarm.Location = new System.Drawing.Point(12, 215);
             this.Alarm.Name = "Alarm";
-            this.Alarm.Size = new System.Drawing.Size(700, 200);
+            this.Alarm.Size = new System.Drawing.Size(788, 145);
             this.Alarm.TabIndex = 0;
             this.Alarm.Text = "크자카/누베르";
             this.Alarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Alarm.Visible = false;
+            this.Alarm.Click += new System.EventHandler(this.Alarm_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "garmoth.png");
+            this.imageList1.Images.SetKeyName(1, "karanda.png");
+            this.imageList1.Images.SetKeyName(2, "kutum.png");
+            this.imageList1.Images.SetKeyName(3, "kzarka.png");
+            this.imageList1.Images.SetKeyName(4, "muraka.png");
+            this.imageList1.Images.SetKeyName(5, "nouver.png");
+            this.imageList1.Images.SetKeyName(6, "offin.png");
+            this.imageList1.Images.SetKeyName(7, "quint.png");
+            this.imageList1.Images.SetKeyName(8, "vell.png");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(148, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Enabled = false;
+            this.pictureBox2.ErrorImage = null;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(310, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Enabled = false;
+            this.pictureBox3.ErrorImage = null;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.InitialImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(461, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
             // 
             // AlarmForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(800, 200);
+            this.ClientSize = new System.Drawing.Size(800, 360);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Alarm);
             this.Controls.Add(this.KSTWDay);
             this.Controls.Add(this.LocalWDay);
@@ -193,7 +270,7 @@ namespace WindowsFormsApp1
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.Location = new System.Drawing.Point(1260, 880);
+            this.Location = new System.Drawing.Point(1260, 720);
             this.Name = "AlarmForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -203,6 +280,9 @@ namespace WindowsFormsApp1
             this.TransparencyKey = System.Drawing.Color.DimGray;
             this.Load += new System.EventHandler(this.BDODESKTOPALRAM_Load);
             this.TrayIconMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,6 +308,10 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label LocalWDay;
         private System.Windows.Forms.Label KSTWDay;
         private System.Windows.Forms.Label Alarm;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 
