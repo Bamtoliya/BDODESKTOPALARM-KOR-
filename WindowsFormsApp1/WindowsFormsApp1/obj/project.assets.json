@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Desktop-n921np9\\d\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\DesktopAlarm.csproj",
-      "projectName": "DesktopAlarm",
-      "projectPath": "\\\\Desktop-n921np9\\d\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\DesktopAlarm.csproj",
+      "projectUniqueName": "\\\\Desktop-n921np9\\d\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\BDODesktopAlarm.csproj",
+      "projectName": "BDODesktopAlarm",
+      "projectPath": "\\\\Desktop-n921np9\\d\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\BDODesktopAlarm.csproj",
       "packagesPath": "C:\\Users\\Bamtoliya\\.nuget\\packages\\",
       "outputPath": "\\\\Desktop-n921np9\\d\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\obj\\",
       "projectStyle": "PackageReference",

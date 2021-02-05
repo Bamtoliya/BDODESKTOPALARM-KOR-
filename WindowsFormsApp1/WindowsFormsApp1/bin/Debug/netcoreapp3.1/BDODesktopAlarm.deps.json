@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BDODesktopAlarm/1.0.0": {
+        "runtime": {
+          "BDODesktopAlarm.dll": {}
+        },
+        "resources": {
+          "en-001/BDODesktopAlarm.resources.dll": {
+            "locale": "en-001"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BDODesktopAlarm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

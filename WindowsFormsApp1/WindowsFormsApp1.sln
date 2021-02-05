@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesktopAlarm", "WindowsFormsApp1\DesktopAlarm.csproj", "{F6A1A11B-DB2D-4DB6-8986-4AD10469768F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDODesktopAlarm", "WindowsFormsApp1\BDODesktopAlarm.csproj", "{F6A1A11B-DB2D-4DB6-8986-4AD10469768F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
