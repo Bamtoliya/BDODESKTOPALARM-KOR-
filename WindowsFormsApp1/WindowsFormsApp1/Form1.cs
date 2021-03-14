@@ -40,8 +40,8 @@ namespace WindowsFormsApp1
         {
 
             DateTime KSTime = DateTime.UtcNow.AddHours(9);
-            TimeSpan localTimeZone = TimeZoneInfo.Local.BaseUtcOffset;
-            DateTime LocalTime = DateTime.UtcNow.AddHours(localTimeZone.Hours);
+            TimeZoneInfo localTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
+            DateTime LocalTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, localTimeZone);
                        
             KST.Text = KSTime.ToString("HH:mm");
             KSTss.Text = KSTime.ToString("ss");
@@ -190,11 +190,11 @@ namespace WindowsFormsApp1
             {
                 if (KSTime.DayOfWeek.Equals(DayOfWeek.Sunday))
                 {
-                    Alarm.Text = "크자카/누베르";
+                    Alarm.Text = "카란다/쿠툼";
                     Alarm.Visible = true;
-                    pictureBox1.Image = imageList1.Images[3];
+                    pictureBox1.Image = imageList1.Images[1];
                     pictureBox1.Visible = true;
-                    pictureBox3.Image = imageList1.Images[5];
+                    pictureBox3.Image = imageList1.Images[2];
                     pictureBox3.Visible = true;
                 }
                 if (KSTime.DayOfWeek.Equals(DayOfWeek.Monday))
