@@ -6,6 +6,10 @@ Black Desert Online Korea server alarm inside the game doesn't work with the for
 So I made desktop application to alarm the World bosses.
 This alarm is Korean based the text with World boss name is written in Korean.
 
+Recommend Resolution of Display : 2560x1080 (21:9) WFHD
+* 낮은 해상도에서 작업시 시간 디스플레이가 화면밖으로 빠져나감 좌표값으로 고정했기때문에 나중에 퍼센트로 바꾸든 조건문을 만들어서 해상도에따른 위치조정이 필요함
+Recommend Font: Digitals-7
+* 
 
 You may see the source code If you want some change in language or setting you can branch out.
 
