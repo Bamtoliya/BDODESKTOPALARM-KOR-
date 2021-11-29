@@ -19,3 +19,5 @@ Top : Korea Time
 Bottom : Your Local time
 
 Especailly Images are not clear resolutions are sized down forcely.
+
+단순 exe 파일 링크: https://drive.google.com/file/d/13u-oiW-MIIKJgkUGHdxgjBWU1g_rSLQk/view?usp=sharing
