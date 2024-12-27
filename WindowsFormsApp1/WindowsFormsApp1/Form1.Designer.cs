@@ -29,260 +29,229 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlarmForm));
-            this.KST = new System.Windows.Forms.Label();
-            this.Local = new System.Windows.Forms.Label();
-            this.Timer1 = new System.Windows.Forms.Timer(this.components);
-            this.KSTss = new System.Windows.Forms.Label();
-            this.Localss = new System.Windows.Forms.Label();
-            this.BDOtrayIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.TrayIconMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.LocalWDay = new System.Windows.Forms.Label();
-            this.KSTWDay = new System.Windows.Forms.Label();
-            this.Alarm = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.TrayIconMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.SuspendLayout();
+            KST = new System.Windows.Forms.Label();
+            Timer1 = new System.Windows.Forms.Timer(components);
+            KSTss = new System.Windows.Forms.Label();
+            BDOtrayIcon = new System.Windows.Forms.NotifyIcon(components);
+            TrayIconMenu = new System.Windows.Forms.ContextMenuStrip(components);
+            toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            KSTWDay = new System.Windows.Forms.Label();
+            imageList1 = new System.Windows.Forms.ImageList(components);
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            pictureBox2 = new System.Windows.Forms.PictureBox();
+            pictureBox3 = new System.Windows.Forms.PictureBox();
+            pictureBox4 = new System.Windows.Forms.PictureBox();
+            TrayIconMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            SuspendLayout();
             // 
             // KST
             // 
-            this.KST.AutoSize = true;
-            this.KST.BackColor = System.Drawing.Color.Transparent;
-            this.KST.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KST.ForeColor = System.Drawing.Color.White;
-            this.KST.Location = new System.Drawing.Point(531, 228);
-            this.KST.Name = "KST";
-            this.KST.Size = new System.Drawing.Size(173, 67);
-            this.KST.TabIndex = 0;
-            this.KST.Text = "33:33";
-            this.KST.Click += new System.EventHandler(this.KST_Click);
-            // 
-            // Local
-            // 
-            this.Local.AutoSize = true;
-            this.Local.BackColor = System.Drawing.Color.Transparent;
-            this.Local.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Local.ForeColor = System.Drawing.Color.White;
-            this.Local.Location = new System.Drawing.Point(531, 293);
-            this.Local.Name = "Local";
-            this.Local.Size = new System.Drawing.Size(173, 67);
-            this.Local.TabIndex = 0;
-            this.Local.Text = "35:77";
-            this.Local.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Local.Click += new System.EventHandler(this.Local_Click);
+            KST.AutoSize = true;
+            KST.BackColor = System.Drawing.Color.Transparent;
+            KST.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            KST.ForeColor = System.Drawing.Color.White;
+            KST.Location = new System.Drawing.Point(545, 294);
+            KST.Name = "KST";
+            KST.Size = new System.Drawing.Size(173, 67);
+            KST.TabIndex = 0;
+            KST.Text = "33:33";
+            KST.Click += KST_Click;
             // 
             // Timer1
             // 
-            this.Timer1.Interval = 1000;
-            this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            Timer1.Interval = 1000;
+            Timer1.Tick += Timer1_Tick;
             // 
             // KSTss
             // 
-            this.KSTss.AutoSize = true;
-            this.KSTss.BackColor = System.Drawing.Color.Transparent;
-            this.KSTss.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KSTss.ForeColor = System.Drawing.Color.White;
-            this.KSTss.Location = new System.Drawing.Point(704, 228);
-            this.KSTss.Name = "KSTss";
-            this.KSTss.Size = new System.Drawing.Size(95, 67);
-            this.KSTss.TabIndex = 0;
-            this.KSTss.Text = "33";
-            this.KSTss.Click += new System.EventHandler(this.KST_Click);
-            // 
-            // Localss
-            // 
-            this.Localss.AutoSize = true;
-            this.Localss.BackColor = System.Drawing.Color.Transparent;
-            this.Localss.Font = new System.Drawing.Font("DS-Digital", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Localss.ForeColor = System.Drawing.Color.White;
-            this.Localss.Location = new System.Drawing.Point(704, 293);
-            this.Localss.Name = "Localss";
-            this.Localss.Size = new System.Drawing.Size(96, 66);
-            this.Localss.TabIndex = 0;
-            this.Localss.Text = "66";
-            this.Localss.Click += new System.EventHandler(this.Local_Click);
+            KSTss.AutoSize = true;
+            KSTss.BackColor = System.Drawing.Color.Transparent;
+            KSTss.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            KSTss.ForeColor = System.Drawing.Color.White;
+            KSTss.Location = new System.Drawing.Point(704, 294);
+            KSTss.Name = "KSTss";
+            KSTss.Size = new System.Drawing.Size(95, 67);
+            KSTss.TabIndex = 0;
+            KSTss.Text = "33";
+            KSTss.Click += KST_Click;
+            KSTss.MouseDown += KSTSS_MouseDown;
+            KSTss.MouseMove += KSTSS_MouseMove;
+            KSTss.MouseUp += KSTSS_MouseUp;
             // 
             // BDOtrayIcon
             // 
-            this.BDOtrayIcon.ContextMenuStrip = this.TrayIconMenu;
-            this.BDOtrayIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("BDOtrayIcon.Icon")));
-            this.BDOtrayIcon.Text = "BDOtrayIcon";
-            this.BDOtrayIcon.Visible = true;
-            this.BDOtrayIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.BDOtrayIcon_MouseDoubleClick);
+            BDOtrayIcon.ContextMenuStrip = TrayIconMenu;
+            BDOtrayIcon.Icon = (System.Drawing.Icon)resources.GetObject("BDOtrayIcon.Icon");
+            BDOtrayIcon.Text = "BDOtrayIcon";
+            BDOtrayIcon.Visible = true;
+            BDOtrayIcon.MouseDoubleClick += BDOtrayIcon_MouseDoubleClick;
             // 
             // TrayIconMenu
             // 
-            this.TrayIconMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
-            this.TrayIconMenu.Name = "trayIconMenu";
-            this.TrayIconMenu.Size = new System.Drawing.Size(118, 70);
-            this.TrayIconMenu.Text = "TrayIconMenu";
-            this.TrayIconMenu.Opening += new System.ComponentModel.CancelEventHandler(this.TrayIconMenu_Opening);
+            TrayIconMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2, toolStripMenuItem3 });
+            TrayIconMenu.Name = "trayIconMenu";
+            TrayIconMenu.Size = new System.Drawing.Size(134, 70);
+            TrayIconMenu.Text = "TrayIconMenu";
+            TrayIconMenu.Opening += TrayIconMenu_Opening;
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
-            this.toolStripMenuItem1.Text = "Open";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            toolStripMenuItem1.Checked = true;
+            toolStripMenuItem1.CheckOnClick = true;
+            toolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
+            toolStripMenuItem1.Text = "Open/Hide";
+            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // toolStripMenuItem2
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(117, 22);
-            this.toolStripMenuItem2.Text = "Settings";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            toolStripMenuItem2.CheckOnClick = true;
+            toolStripMenuItem2.Name = "toolStripMenuItem2";
+            toolStripMenuItem2.Size = new System.Drawing.Size(133, 22);
+            toolStripMenuItem2.Text = "Lock";
+            toolStripMenuItem2.Click += toolStripMenuItem2_Click;
             // 
             // toolStripMenuItem3
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(117, 22);
-            this.toolStripMenuItem3.Text = "Exit";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
-            // 
-            // LocalWDay
-            // 
-            this.LocalWDay.AutoSize = true;
-            this.LocalWDay.BackColor = System.Drawing.Color.Transparent;
-            this.LocalWDay.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LocalWDay.ForeColor = System.Drawing.Color.White;
-            this.LocalWDay.Location = new System.Drawing.Point(409, 293);
-            this.LocalWDay.Name = "LocalWDay";
-            this.LocalWDay.Size = new System.Drawing.Size(128, 67);
-            this.LocalWDay.TabIndex = 2;
-            this.LocalWDay.Text = "DAY";
+            toolStripMenuItem3.Name = "toolStripMenuItem3";
+            toolStripMenuItem3.Size = new System.Drawing.Size(133, 22);
+            toolStripMenuItem3.Text = "Exit";
+            toolStripMenuItem3.Click += toolStripMenuItem3_Click;
             // 
             // KSTWDay
             // 
-            this.KSTWDay.AutoSize = true;
-            this.KSTWDay.BackColor = System.Drawing.Color.Transparent;
-            this.KSTWDay.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KSTWDay.ForeColor = System.Drawing.Color.White;
-            this.KSTWDay.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.KSTWDay.Location = new System.Drawing.Point(409, 228);
-            this.KSTWDay.Name = "KSTWDay";
-            this.KSTWDay.Size = new System.Drawing.Size(128, 67);
-            this.KSTWDay.TabIndex = 3;
-            this.KSTWDay.Text = "DAy";
-            // 
-            // Alarm
-            // 
-            this.Alarm.BackColor = System.Drawing.Color.Transparent;
-            this.Alarm.Font = new System.Drawing.Font("맑은 고딕", 69.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Alarm.Location = new System.Drawing.Point(12, 215);
-            this.Alarm.Name = "Alarm";
-            this.Alarm.Size = new System.Drawing.Size(788, 145);
-            this.Alarm.TabIndex = 0;
-            this.Alarm.Text = "크자카/누베르";
-            this.Alarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Alarm.Visible = false;
-            this.Alarm.Click += new System.EventHandler(this.Alarm_Click);
+            KSTWDay.AutoSize = true;
+            KSTWDay.BackColor = System.Drawing.Color.Transparent;
+            KSTWDay.Font = new System.Drawing.Font("Digital-7", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            KSTWDay.ForeColor = System.Drawing.Color.White;
+            KSTWDay.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            KSTWDay.Location = new System.Drawing.Point(426, 294);
+            KSTWDay.Name = "KSTWDay";
+            KSTWDay.Size = new System.Drawing.Size(128, 67);
+            KSTWDay.TabIndex = 3;
+            KSTWDay.Text = "DAy";
             // 
             // imageList1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "garmoth.png");
-            this.imageList1.Images.SetKeyName(1, "karanda.png");
-            this.imageList1.Images.SetKeyName(2, "kutum.png");
-            this.imageList1.Images.SetKeyName(3, "kzarka.png");
-            this.imageList1.Images.SetKeyName(4, "muraka.png");
-            this.imageList1.Images.SetKeyName(5, "nouver.png");
-            this.imageList1.Images.SetKeyName(6, "offin.png");
-            this.imageList1.Images.SetKeyName(7, "quint.png");
-            this.imageList1.Images.SetKeyName(8, "vell.png");
+            imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            imageList1.Images.SetKeyName(0, "가모스.bmp");
+            imageList1.Images.SetKeyName(1, "검은그림자.bmp");
+            imageList1.Images.SetKeyName(2, "금돼지왕.bmp");
+            imageList1.Images.SetKeyName(3, "누베르.bmp");
+            imageList1.Images.SetKeyName(4, "라우라우.bmp");
+            imageList1.Images.SetKeyName(5, "베빨우.bmp");
+            imageList1.Images.SetKeyName(6, "벨.bmp");
+            imageList1.Images.SetKeyName(7, "불가살.bmp");
+            imageList1.Images.SetKeyName(8, "산군.bmp");
+            imageList1.Images.SetKeyName(9, "오핀.bmp");
+            imageList1.Images.SetKeyName(10, "우투리.bmp");
+            imageList1.Images.SetKeyName(11, "지늑카츠.bmp");
+            imageList1.Images.SetKeyName(12, "카란다.bmp");
+            imageList1.Images.SetKeyName(13, "쿠툼.bmp");
+            imageList1.Images.SetKeyName(14, "크자카.bmp");
+            imageList1.Images.SetKeyName(15, "muraka.png");
+            imageList1.Images.SetKeyName(16, "quint.png");
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(148, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
+            pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            pictureBox1.ErrorImage = null;
+            pictureBox1.Image = BDODesktopAlarm.Properties.Resources.가모스;
+            pictureBox1.InitialImage = null;
+            pictureBox1.Location = new System.Drawing.Point(71, 91);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(200, 200);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            pictureBox1.Visible = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.ErrorImage = null;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(310, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
+            pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            pictureBox2.ErrorImage = null;
+            pictureBox2.Image = BDODesktopAlarm.Properties.Resources.카란다;
+            pictureBox2.InitialImage = null;
+            pictureBox2.Location = new System.Drawing.Point(248, 91);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new System.Drawing.Size(200, 200);
+            pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
+            pictureBox2.Visible = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.ErrorImage = null;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(461, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Visible = false;
+            pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            pictureBox3.ErrorImage = null;
+            pictureBox3.Image = BDODesktopAlarm.Properties.Resources.누베르;
+            pictureBox3.InitialImage = null;
+            pictureBox3.Location = new System.Drawing.Point(426, 91);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new System.Drawing.Size(200, 200);
+            pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 4;
+            pictureBox3.TabStop = false;
+            pictureBox3.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            pictureBox4.ErrorImage = null;
+            pictureBox4.Image = BDODesktopAlarm.Properties.Resources.지늑카츠;
+            pictureBox4.InitialImage = null;
+            pictureBox4.Location = new System.Drawing.Point(599, 91);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new System.Drawing.Size(200, 200);
+            pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 6;
+            pictureBox4.TabStop = false;
+            pictureBox4.Visible = false;
             // 
             // AlarmForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(800, 360);
-            this.ControlBox = false;
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Alarm);
-            this.Controls.Add(this.KSTWDay);
-            this.Controls.Add(this.LocalWDay);
-            this.Controls.Add(this.Localss);
-            this.Controls.Add(this.Local);
-            this.Controls.Add(this.KSTss);
-            this.Controls.Add(this.KST);
-            this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.Location = new System.Drawing.Point(1260, 720);
-            this.Name = "AlarmForm";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "XD";
-            this.TopMost = true;
-            this.TransparencyKey = System.Drawing.Color.DimGray;
-            this.Load += new System.EventHandler(this.BDODESKTOPALRAM_Load);
-            this.TrayIconMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.DimGray;
+            ClientSize = new System.Drawing.Size(800, 360);
+            ControlBox = false;
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox1);
+            Controls.Add(KSTWDay);
+            Controls.Add(KSTss);
+            Controls.Add(KST);
+            ForeColor = System.Drawing.Color.White;
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            ImeMode = System.Windows.Forms.ImeMode.Off;
+            Location = new System.Drawing.Point(1260, 720);
+            Name = "AlarmForm";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            Text = "XD";
+            TopMost = true;
+            TransparencyKey = System.Drawing.Color.DimGray;
+            Load += BDODESKTOPALRAM_Load;
+            TrayIconMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         private void ToolStripMenuItem1_Click(object sender, System.EventArgs e)
@@ -293,22 +262,19 @@ namespace WindowsFormsApp1
         #endregion
 
         private System.Windows.Forms.Label KST;
-        private System.Windows.Forms.Label Local;
         private System.Windows.Forms.Timer Timer1;
         private System.Windows.Forms.Label KSTss;
-        private System.Windows.Forms.Label Localss;
         private System.Windows.Forms.NotifyIcon BDOtrayIcon;
         private System.Windows.Forms.ContextMenuStrip TrayIconMenu;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.Label LocalWDay;
         private System.Windows.Forms.Label KSTWDay;
-        private System.Windows.Forms.Label Alarm;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

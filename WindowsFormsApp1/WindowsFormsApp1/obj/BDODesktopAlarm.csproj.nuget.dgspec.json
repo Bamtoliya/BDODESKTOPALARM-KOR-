@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Desktop-n921np9\\d\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\BDODesktopAlarm.csproj": {}
+    "I:\\BamtoliyaGithub\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\BDODesktopAlarm.csproj": {}
   },
   "projects": {
-    "\\\\Desktop-n921np9\\d\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\BDODesktopAlarm.csproj": {
+    "I:\\BamtoliyaGithub\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\BDODesktopAlarm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Desktop-n921np9\\d\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\BDODesktopAlarm.csproj",
+        "projectUniqueName": "I:\\BamtoliyaGithub\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\BDODesktopAlarm.csproj",
         "projectName": "BDODesktopAlarm",
-        "projectPath": "\\\\Desktop-n921np9\\d\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\BDODesktopAlarm.csproj",
-        "packagesPath": "C:\\Users\\Bamtoliya\\.nuget\\packages\\",
-        "outputPath": "\\\\Desktop-n921np9\\d\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\obj\\",
+        "projectPath": "I:\\BamtoliyaGithub\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\BDODesktopAlarm.csproj",
+        "packagesPath": "C:\\Users\\myung\\.nuget\\packages\\",
+        "outputPath": "I:\\BamtoliyaGithub\\BDODESKTOPALARM-KOR-\\WindowsFormsApp1\\WindowsFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bamtoliya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\myung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,7 +39,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -45,7 +56,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -57,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

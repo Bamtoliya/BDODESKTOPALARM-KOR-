@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BDODesktopAlarm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c59a162744faff9d599b65ead690dcb5875caa1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("BDODesktopAlarm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BDODesktopAlarm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

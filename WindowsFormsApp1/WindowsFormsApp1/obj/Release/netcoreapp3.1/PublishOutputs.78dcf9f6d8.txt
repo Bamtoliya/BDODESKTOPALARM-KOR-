@@ -1,0 +1,6 @@
+C:\Users\myung\OneDrive\바탕 화면\BDODesktopAlarm.exe
+C:\Users\myung\OneDrive\바탕 화면\BDODesktopAlarm.dll
+C:\Users\myung\OneDrive\바탕 화면\BDODesktopAlarm.deps.json
+C:\Users\myung\OneDrive\바탕 화면\BDODesktopAlarm.runtimeconfig.json
+C:\Users\myung\OneDrive\바탕 화면\BDODesktopAlarm.pdb
+C:\Users\myung\OneDrive\바탕 화면\en-001\BDODesktopAlarm.resources.dll
